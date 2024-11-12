@@ -16,7 +16,7 @@
     Add-PSSnapin -Name "Citrix*"
 # -------------------------------
 
-# SCRIPT ------------------------git 
+# SCRIPT ------------------------
 # Determine working Citrix VAD Delivery Controller
     foreach ($CTXDCTest in $CTXDCs) {
         if (Test-Connection -ComputerName $CTXDCTest -Count 1 -ErrorAction SilentlyContinue) {
