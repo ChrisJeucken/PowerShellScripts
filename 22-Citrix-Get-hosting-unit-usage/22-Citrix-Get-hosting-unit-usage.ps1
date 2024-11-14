@@ -64,7 +64,7 @@
     }
 
 # Get provisioning schemes
-    $ProvSchemes = Get-ProvScheme -AdminAddress $CTXDC
+    $ProvSchemes = Get-ProvScheme -AdminAddress $TargetDC
 
 # Check which hosting units are not specified in any provisioning scheme
     foreach ($HostingUnit in $HostingUnits) {
